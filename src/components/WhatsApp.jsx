@@ -1,40 +1,50 @@
-import { InstagramIcon, MessageCircle } from "lucide-react";
-
+import { Instagram, MessageCircle } from "lucide-react";
+import { motion } from "framer-motion";
 export default function SocialRail() {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, x: 40 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       className="
-        fixed right-4 bottom-1/3 z-50
-        flex flex-col gap-3
-        opacity-100 md:opacity-0
-        md:group-hover:opacity-100
-        transition-all duration-300
-
-      "
+       fixed right-6 bottom-10 z-[120]
+       flex flex-col gap-4
+     "
     >
+      {/* WhatsApp */}
       <a
-        href="https://wa.me/91XXXXXXXXXX"
+        href="https://wa.me/917842296700"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-11 h-11 flex items-center justify-center
-                   rounded-full bg-primary text-bg
-                   hover:scale-105 transition"
+        className="
+         group w-12 h-12 flex items-center justify-center
+         rounded-full bg-[#25D366] text-white
+         shadow-lg
+         transition-all duration-300
+         hover:scale-110 hover:shadow-2xl
+       "
         aria-label="WhatsApp"
       >
-        <MessageCircle size={18} />
+        <MessageCircle size={20} />
       </a>
+      {/* Instagram */}
       <a
         href="https://instagram.com/socialxcafe"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-11 h-11 flex items-center justify-center
-                   rounded-full border border-primary/20
-                   hover:bg-primary hover:text-bg
-                   transition"
+        className="
+         group w-12 h-12 flex items-center justify-center
+         rounded-full bg-white
+         border border-primary/20
+         shadow-md
+         transition-all duration-300
+         hover:bg-gradient-to-tr hover:from-pink-500 hover:to-yellow-400
+         hover:text-white hover:scale-110 hover:shadow-xl
+       "
         aria-label="Instagram"
       >
-        {/* <InstagramIcon size={18} /> */}
+        <Instagram size={20} />
       </a>
-    </div>
+    </motion.div>
   );
 }

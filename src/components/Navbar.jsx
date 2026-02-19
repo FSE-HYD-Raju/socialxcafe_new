@@ -23,21 +23,23 @@ export default function Navbar() {
             : "bg-transparent text-white"
         }`}
       >
-        <span className="font-heading">SOCIALXCAFE</span>
+        <span className="font-heading font-bold letter-spacing">
+          SOCIALXCAFE
+        </span>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 text-sm">
-          <a href="#hero">Home</a>
-          <a href="#about">About</a>
-          <a href="#thespace">The Space</a>
-          <a href="#events">Events</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#visit">Visit Us</a>
+          <a href="#hero">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#thespace">THE SPACE</a>
+          <a href="#events">EVENTS</a>
+          <a href="#gallery">GALLERY</a>
+          <a href="#visit">VISIT US</a>
         </nav>
 
         {/* Mobile Hamburger */}
         {!open && (
-          <button className="md:hidden mr-8 " onClick={() => setOpen(true)}>
+          <button className="md:hidden" onClick={() => setOpen(true)}>
             <Menu size={30} />
           </button>
         )}
@@ -45,34 +47,34 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-bg z-40 flex flex-col items-center justify-center gap-8 text-2xl font-heading transition-transform duration-300 ${
+        className={`fixed inset-0 bg-bg z-[100] flex flex-col items-center justify-center gap-8 text-2xl font-heading transition-transform duration-300 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <button
-          className="absolute top-6 right-8"
+          className="absolute top-4 right-2 z-[110]"
           onClick={() => setOpen(false)}
         >
           <X size={28} />
         </button>
 
         <a href="#hero" onClick={() => setOpen(false)}>
-          Home
+          HOME
         </a>
         <a href="#about" onClick={() => setOpen(false)}>
-          About
+          ABOUT
         </a>
         <a href="#thespace" onClick={() => setOpen(false)}>
-          The Space
+          THE SPACE
         </a>
         <a href="#events" onClick={() => setOpen(false)}>
-          Events
+          EVENTS
         </a>
         <a href="#gallery" onClick={() => setOpen(false)}>
-          Gallery
+          GALLERY
         </a>
         <a href="#visit" onClick={() => setOpen(false)}>
-          Visit Us
+          VISIT US
         </a>
       </div>
     </>

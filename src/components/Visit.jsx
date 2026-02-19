@@ -14,9 +14,22 @@ export default function Contact() {
       <div className="container mx-auto px-6 md:flex md:justify-between md:items-start gap-10">
         {/* Business Info */}
         <div className="md:w-1/2">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">SocialX Cafe | Snooker and Co-workspace</h2>
-          <p className="mb-2">Address: 3rd Floor, Mani Tech Space, Siddhi Vinayak Nagar, Madhapur, Hyderabad, Telangana 500081</p>
-          <p className="mb-4">Phone: <a href="tel:07207766021" className="underline hover:text-yellow-500">072077 66021</a></p>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            SocialX Cafe | Snooker and Co-workspace
+          </h2>
+          <p className="mb-2">
+            Address: 3rd Floor, Mani Tech Space, Siddhi Vinayak Nagar, Madhapur,
+            Hyderabad, Telangana 500081
+          </p>
+          <p className="mb-4">
+            Phone:{" "}
+            <a
+              href="tel:07842296700"
+              className="underline hover:text-yellow-500"
+            >
+              7842296700
+            </a>
+          </p>
 
           <h3 className="text-xl font-semibold mb-2">Hours:</h3>
           <ul className="text-gray-300">
