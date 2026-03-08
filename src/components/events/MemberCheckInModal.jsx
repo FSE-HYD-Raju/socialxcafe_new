@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { QrReader } from "react-qr-reader";
 import { doc, getDoc, increment, updateDoc } from "firebase/firestore";
 import { db } from "../../lib/firebase";
 
@@ -73,13 +72,13 @@ export default function MemberCheckInModal({ event, onClose }) {
         <h3 className="text-2xl font-semibold mb-6">
           {event.title} – Check-In
         </h3>
-        <QrReader
+        {/* <QrReader
           constraints={{ facingMode: "environment" }}
           onResult={(result) => {
             if (result) handleScan(result);
           }}
           style={{ width: "100%" }}
-        />
+        /> */}
         {message && (
           <div className="mt-6 p-4 border rounded-xl">
             <p className="font-medium">{message}</p>

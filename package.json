@@ -10,7 +10,6 @@
   "dependencies": {
     "@fontsource/inter": "^5.2.8",
     "@fontsource/plus-jakarta-sans": "^5.2.8",
-    "@yudiel/react-qr-scanner": "^2.5.1",
     "file-saver": "^2.0.5",
     "firebase": "^12.9.0",
     "framer-motion": "^11.0.0",
