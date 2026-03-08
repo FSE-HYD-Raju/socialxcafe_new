@@ -7,13 +7,13 @@ export default {
         section: "#EFE9E2",
         primary: "#2B2B2B",
         muted: "#7A726C",
-        accent: "#C47A3A"
+        accent: "#C47A3A",
       },
       fontFamily: {
-        heading: ["Playfair Display", "serif"],
-        body: ["Inter", "sans-serif"]
-      }
-    }
+        sans: ["Inter", "sans-serif"],
+        heading: ["Plus Jakarta Sans", "sans-serif"],
+      },
+    },
   },
-  plugins: []
-}
+  plugins: [],
+};

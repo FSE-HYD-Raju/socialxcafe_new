@@ -39,7 +39,7 @@ export default function Gallery() {
             >
               <img
                 src={img}
-                alt="Social X Cafe"
+                alt="Social X Hub"
                 loading="lazy"
                 className="
                  w-full h-full object-cover aspect-[4/5]

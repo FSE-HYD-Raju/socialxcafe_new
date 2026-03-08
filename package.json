@@ -8,10 +8,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/plus-jakarta-sans": "^5.2.8",
+    "file-saver": "^2.0.5",
+    "firebase": "^12.9.0",
     "framer-motion": "^11.0.0",
     "lucide-react": "^0.563.0",
+    "qrcode": "^1.5.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-confetti": "^6.4.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^19.2.4",
+    "react-qr-reader": "^3.0.0-beta-1",
+    "react-router-dom": "^7.13.0",
+    "recharts": "^3.7.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
