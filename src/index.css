@@ -37,3 +37,16 @@ body {
 .card-glow:hover {
  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
 }
+
+.input{
+width:100%;
+border:1px solid #e5e7eb;
+padding:10px 12px;
+border-radius:8px;
+outline:none;
+}
+
+.input:focus{
+border-color:#6366f1;
+box-shadow:0 0 0 2px rgba(99,102,241,0.2);
+}
